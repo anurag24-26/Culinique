@@ -1,8 +1,10 @@
 import React from 'react'
 import '../styles/HomePage.css'
+import About from './About'
 import welcomeimage from '../assets/welcome.png'
 const HomePage = () => {
   return (
+    <>
     <div className="container">
       <div className="content">
         <h4>Chase The New Flavour</h4>
@@ -17,7 +19,8 @@ const HomePage = () => {
       </div>
     </div>
 
-    
+    <About/>
+    </>
   );
 }
 
