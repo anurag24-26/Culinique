@@ -16,6 +16,8 @@ const HomePage = () => {
         <img src={welcomeimage} alt="Delicious food" />
       </div>
     </div>
+
+    
   );
 }
 
