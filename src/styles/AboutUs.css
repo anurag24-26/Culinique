@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  .about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+    position: relative;
+  }
+  
+  .section {
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f5d742;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .section p {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  .knife-image {
+    position: absolute;
+    height: 90vh;
+    top: 5%; /* Centered vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f5d742;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #000;
+    color: #f5d742;
+    border: 2px solid #f5d742;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column;
+      justify-content: center; /* Align sections in the center */
+      padding: 20px;
+      height: auto; /* Allow height to adjust based on content */
+    }
+  
+    .section {
+      max-width: 100%;
+      margin-bottom: 20px; /* Add spacing between sections */
+    }
+    .section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #f5d742;
+        opacity: 0;
+        animation: fadeIn 1s ease forwards;
+      }
+      
+      .section p {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        opacity: 0;
+        animation: fadeIn 1.5s ease forwards;
+      }
+  
+    .knife-image {
+      position: relative;
+      left: 30%; /* Ensure proper stacking */
+      width: 50%; /* Adjust the width for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+      margin: 20px 0; /* Add spacing around the knife image */
+      transform: translate(0, 0); /* Reset transform for mobile */
+    }
+  }
+  

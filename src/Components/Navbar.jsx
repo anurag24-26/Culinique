@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../styles/Navbar.css';
-import Logo from '../assets/restaurant-svgrepo-com.svg'; // Import the SVG
+import Logo1 from '../assets/restaurant-svgrepo-com.svg'; 
+import Profileimage from '../assets/profile.png'
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -10,7 +11,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo-container">
-        <img src={Logo} className="navbar-logo-svg" alt="Logo" />
+      <Link to="/Profile" >
+          <img src={Profileimage} alt="" />
+        </Link>
+
+        <img src={Logo1} className="navbar-logo-svg" alt="Logo" />
         <h1 className="navbar-logo">Culinique</h1>
       </div>
       <ul
@@ -21,21 +26,25 @@ const Navbar = () => {
           <li>Home</li>
         </Link>
         <Link to="/about" className="about">
-          <li>About</li>
+          <li>Menu</li>
         </Link>
         <Link to="/menu" className="menu">
-          <li>Menu</li>
+          <li>Testimonals</li>
         </Link>
         <Link to="/gallery" className="gallery">
           <li>Gallery</li>
         </Link>
         <Link to="/contact" className="contact">
-          <li>Contact</li>
+          <li>Chef's Word</li>
         </Link>
+       
       </ul>
       <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
         {isMobile ? <FaTimes /> : <FaBars />}
       </button>
+      
+
+     
     </nav>
   );
 };

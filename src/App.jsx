@@ -1,17 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import './index.css'
+import Home from './Components/HomePage.jsx'
+import About from './Components/About.jsx';
+const Menu = () => <h2>About Us</h2>;
 
-const Home = () => <h2>Welcome to GourmetFusion!</h2>;
-const About = () => <h2>About Us</h2>;
-const Menu = () => <h2>Our Menu</h2>;
 const Gallery = () => <h2>Gallery</h2>;
-const Contact = () => <h2>Contact Us</h2>;
+const Contact = () => <h2>Chef's Word</h2>;
 
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className='main'>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

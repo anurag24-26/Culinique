@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  border-radius: 30px 30px 0 0;
+  background-color: #141414;
+  color: #fff;
+}
+
+.content {
+  max-width: 50%;
+  animation: fadeInText 1s ease-in-out forwards; /* Apply animation to the whole text block */
+}
+
+.content h4 {
+  font-size: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: slideInText 1s ease-in-out 0.3s forwards; /* Delayed animation for h4 */
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: slideInText 1s ease-in-out 0.6s forwards; /* Delayed animation for h1 */
+}
+
+.content p {
+  font-size: 1rem;
+  font-family: cursive;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: slideInText 1s ease-in-out 0.9s forwards; /* Delayed animation for p */
+}
+
+.explore-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+.explore-button:hover {
+  padding: 10px 20px;
+  background-color: #13bbc7;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.image-container {
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 50%;
+  border: 5px solid #1b1919;
+  transform: translateY(100%);
+  animation: slideUp 1s ease-in-out 1.2s forwards; /* Delayed animation for the image */
+}
+
+/* Keyframes for image slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for text slide-in animation */
+@keyframes slideInText {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for fade-in effect (optional for the entire text block) */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile device adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .content h4 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .explore-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .image-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .image-container img {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
