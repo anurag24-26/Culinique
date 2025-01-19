@@ -15,7 +15,7 @@
 }
 
 .content h4 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 10px;
   opacity: 0;
@@ -23,14 +23,14 @@
 }
 
 .content h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
   opacity: 0;
   animation: slideInText 1s ease-in-out 0.6s forwards; /* Delayed animation for h1 */
 }
 
 .content p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: cursive;
   margin-bottom: 30px;
   opacity: 0;
