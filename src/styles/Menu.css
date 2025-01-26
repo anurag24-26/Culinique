@@ -4,7 +4,8 @@
   background-color: #0e0e0e;
   padding: 20px;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh; /* Changed from height to min-height */
+  box-sizing: border-box; 
 }
 
 .menu-header p {
@@ -70,5 +71,6 @@
 
   .menu-image img {
     margin-top: 20px;
+    width: 350px;
   }
 }
