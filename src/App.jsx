@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import './index.css';
 import Home from './Components/HomePage.jsx';
 import About from './Components/About.jsx';
+import Menu from './Components/Menu.jsx';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/Menu" element={<Menu />} />
         </Routes>
      
       </div>

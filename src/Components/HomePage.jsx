@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/HomePage.css'
 import About from './About'
+import Menu from './Menu'
 import welcomeimage from '../assets/welcome.png'
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
     </div>
 
     <About/>
+    <Menu/>
     </>
   );
 }
