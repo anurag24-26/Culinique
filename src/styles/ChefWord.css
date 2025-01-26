@@ -1,0 +1,100 @@
+.chefword-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    min-height: 100vh; /* Allows the container to grow as needed */
+    box-sizing: border-box; /* Ensures padding is included in height calculations */
+    font-family: 'Arial, sans-serif';
+  }
+  
+  .chefword-content {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .chefword-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .chefword-text {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .chefword-header {
+    font-size: 18px;
+    color: #d4af37;
+    margin-bottom: 10px;
+  }
+  
+  .chefword-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .chefword-quote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  
+  .chefword-quote span {
+    font-size: 40px;
+    line-height: 0;
+    color: #d4af37;
+  }
+  
+  .chefword-signature {
+    font-size: 18px;
+    font-family: 'Cursive';
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .chefword-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .chefword-image img {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .chefword-text {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .chefword-text h1 {
+      font-size: 32px;
+    }
+  
+    .chefword-quote {
+      font-size: 16px;
+    }
+  
+    .chefword-quote span {
+      font-size: 32px;
+    }
+  
+    .chefword-header {
+      font-size: 16px;
+    }
+  
+    .chefword-signature {
+      font-size: 16px;
+      width: 100px;
+    }
+  }
+  
