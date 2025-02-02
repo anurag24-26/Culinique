@@ -1,0 +1,183 @@
+/* General styles */
+.gallery-contact-container {
+  background: #0d0d0d;
+  color: #e5c07b;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* --- Horizontal Layout --- */
+.gallery-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* Text Section */
+.gallery-text {
+  flex: 1;
+  text-align: left;
+}
+
+.gallery-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.gallery-text p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.gallery-text .view-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #e5c07b;
+  color: #0d0d0d;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.gallery-text .view-more:hover {
+  background: #f2d184;
+}
+
+/* --- Image Slider --- */
+.gallery-container {
+  flex: 2;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Slider Track */
+.gallery-slider {
+  display: flex;
+  gap: 10px; /* Added gap between images */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Image Item */
+.gallery-item {
+  position: relative;
+  min-width: 40%;
+  height: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+}
+
+/* --- Navigation Arrows --- */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* --- Media Queries --- */
+/* For medium-end devices */
+@media (max-width: 992px) {
+  .gallery-item {
+    min-width: 50%;
+  }
+  
+  .gallery-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .gallery-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* --- Contact Section --- */
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5c07b;
+  background: transparent;
+  color: #e5c07b;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  font-size: 1rem;
+  background: #e5c07b;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #f2d184;
+}
+
+/* --- Footer Section --- */
+.footer {
+  margin-top: 50px;
+  padding: 15px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  border-top: 1px solid #e5c07b;
+}
