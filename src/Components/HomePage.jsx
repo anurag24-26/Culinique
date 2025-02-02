@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/HomePage.css'
 import About from './About'
 import Menu from './Menu'
+import Gallery from './Gallery.jsx';
 import ChefWord from './Chefwords'
 import welcomeimage from '../assets/welcome.png'
 const HomePage = () => {
@@ -24,6 +25,7 @@ const HomePage = () => {
     <About/>
     <Menu/>
     <ChefWord/>
+    <Gallery/>
     </>
   );
 }
