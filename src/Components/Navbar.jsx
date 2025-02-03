@@ -16,7 +16,7 @@ const Navbar = () => {
         </Link>
 
         <img src={Logo1} className="navbar-logo-svg" alt="Logo" />
-        <h1 className="navbar-logo">Culinique</h1>
+        <h1 className="navbar-logo">Culini</h1>
       </div>
       <ul
         className={isMobile ? 'nav-links-mobile' : 'nav-links'}
