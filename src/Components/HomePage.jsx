@@ -5,6 +5,7 @@ import Menu from './Menu'
 import Gallery from './Gallery.jsx';
 import ChefWord from './Chefwords'
 import welcomeimage from '../assets/welcome.png'
+import Contact from './Contact.jsx';
 const HomePage = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const HomePage = () => {
     <Menu/>
     <ChefWord/>
     <Gallery/>
+    <Contact/>
     </>
   );
 }

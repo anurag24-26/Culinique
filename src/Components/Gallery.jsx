@@ -52,23 +52,7 @@ const Gallery = () => {
         </div>
       </div>
 
-      {/* Contact Section */}
-      <section className="contact-section">
-        <h2>Contact Us</h2>
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
-          <motion.button type="submit" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            Send Message
-          </motion.button>
-        </form>
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 Culinique. All Rights Reserved.</p>
-      </footer>
+      
     </div>
   );
 };

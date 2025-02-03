@@ -6,6 +6,7 @@ import Home from './Components/HomePage.jsx';
 import About from './Components/About.jsx';
 import Menu from './Components/Menu.jsx';
 import Gallery from './Components/Gallery.jsx';
+import Contact from './Components/Contact.jsx';
 const App = () => {
   return (
     <Router>
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
      
       </div>
