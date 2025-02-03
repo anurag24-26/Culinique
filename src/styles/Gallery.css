@@ -21,7 +21,7 @@
 /* Text Section */
 .gallery-text {
   flex: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .gallery-text h2 {
